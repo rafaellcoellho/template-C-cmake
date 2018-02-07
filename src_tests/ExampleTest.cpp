@@ -2,7 +2,7 @@
 
 extern "C"
 {
-	#include "../src/helloWorld.h"
+	#include "helloWorld.h"
 }
 
 TEST_GROUP(helloWorld)
