@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "helloWorld.h"
 
 int main(void)
 {
-	printf("Hello World Cmake Porra!\n");
+	printf("%s\n", helloWorld());
 }
