@@ -4,12 +4,13 @@ project(template_C_cmake)
 if(DEFINED ENV{CPPUTEST_HOME})
 	message("CppUTest found in $ENV{CPPUTEST_HOME}")
 else()
-	message("CPPUTEST_HOME is not set; You must tell Cmake where to find CppUTest")
+	message("CPPUTEST_HOME is not set")
 	return()
 endif()
 
-include_directories(src)
+enable_language(C)
 
-file(GLOB SOURCES "src/*.c")
+set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR})
 
-add_executable(template_C_cmake ${SOURCES})
+add_subdirectory(src)
+add_subdirectory(src_tests)
