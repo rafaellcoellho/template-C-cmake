@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 project(template_C_cmake)
 
+include(uncrustify.cmake)
+
 set(APP_NAME template_C_cmake)
 set(APP_LIB_NAME modules_lib)
 
