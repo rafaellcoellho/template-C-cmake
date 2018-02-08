@@ -19,4 +19,4 @@ set_property(TARGET CppUTest
 		PROPERTY IMPORTED_LOCATION ${CPPUTEST_LIBRARIES}/libCppUTest.a)
 
 add_executable(RunAllTests ${TEST_SOURCES})
-target_link_libraries(RunAllTests CppUTest modules_lib)
+target_link_libraries(RunAllTests CppUTest ${APP_LIB_NAME})
