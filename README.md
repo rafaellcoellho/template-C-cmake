@@ -48,7 +48,8 @@ $ sudo apt-get install cmake
 
 ## Usage
 
-The CMake generate all files necessary to build the app. In root folder of project, try:
+The CMake generate all files necessary to build the app. In root folder of
+project, try:
 
 ```
 $ mkdir build && cd build
